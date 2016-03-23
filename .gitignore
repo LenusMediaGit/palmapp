@@ -86,3 +86,12 @@ local.properties
 !/www/modules/bootstrap/
 /www/conf/*
 !/www/conf/*.def.*
+
+
+#
+# Palmapp
+#
+
+!/www/modules/palmapp/
+!/www/conf/*
+!/config.xml
