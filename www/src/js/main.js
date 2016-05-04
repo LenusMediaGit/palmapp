@@ -1,11 +1,17 @@
 "use strict";
 
-alert('ciao');
-document.write("ciao");
+var appFramework 		= 	null;
+var best_developer 		=	'Lenus Media';
 
-var appFramework = null;
+
+alert('Sono nel file main.js');
+alert('Verifico JQuery');
+alert('Quanti wrapper ci sono?' + $('#wrapper').length());
+
+
 
 document.addEventListener("deviceready", function () {
+	alert('Il device è pronto all\'azione.... device ready.');
 }, false);
 
 appFramework = AppFramework.init();

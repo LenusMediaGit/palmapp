@@ -1,7 +1,6 @@
 "use strict";
 
-alert('ciao1');
-document.write("ciao1");
+
 
 var AppFramework = function (callback) {
     var that = this;
@@ -41,6 +40,7 @@ var AppFramework = function (callback) {
         } else {
             if (_conf.url) {
                 this.loadExternal();
+				alert('Sono al LoadExternal...');
             }
         }
     };
