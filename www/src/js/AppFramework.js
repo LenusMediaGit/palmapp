@@ -4,6 +4,9 @@
 
 var AppFramework = function (callback) {
     var that = this;
+	
+	alert('sono dentro app Framework.js' + jQuery().jquery);
+
 
     var _confDef = {};
     var _conf = {};
@@ -13,6 +16,7 @@ var AppFramework = function (callback) {
     // [constructor]
     // [TODO] avoid callback nesting using hwcore framework
     jQuery.getJSON(AppFramework.URL_CONF + "conf.def.json", function (resDef) {
+		alert('ho caricato i JSON...');
         _confDef = resDef;
         jQuery.getJSON(AppFramework.URL_CONF + "conf.json", function (res) {
             _conf = jQuery.extend(true, _confDef, res);
@@ -31,6 +35,9 @@ var AppFramework = function (callback) {
         document.title = _conf.appTitle;
 
         if (_conf.customScript) {
+			alert('ci sono dei custom script...');
+			alert('ho caricato i JSON...');
+
             jQuery.getScript(AppFramework.URL_ROOT + _conf.customScript, function () {
                 if (typeof callback == "function")
                     callback.call(that);
@@ -40,7 +47,6 @@ var AppFramework = function (callback) {
         } else {
             if (_conf.url) {
                 this.loadExternal();
-				alert('Sono al LoadExternal...');
             }
         }
     };

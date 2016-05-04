@@ -5,8 +5,6 @@ var best_developer 		=	'Lenus Media';
 
 
 alert('Sono nel file main.js');
-alert('Verifico JQuery');
-alert('Quanti wrapper ci sono?');
 alert($().jquery);
 
 
@@ -14,6 +12,6 @@ alert($().jquery);
 
 document.addEventListener("deviceready", function () {
 	alert('Il device è pronto all\'azione.... device ready.');
+	appFramework = AppFramework.init();
 }, false);
 
-appFramework = AppFramework.init();
