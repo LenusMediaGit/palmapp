@@ -6,7 +6,7 @@ var origUrl = "http://palmapp.lenuslab.com/web/?version=1&platform=phonegap&phon
 
 if (!appFramework.getConf("url"))
     appFramework.setConf("url", origUrl);
-
+/*
 var push = PushNotification.init({
     android: {
         senderID: "993634988218"
@@ -58,7 +58,7 @@ push.on('notification', function (data) {
 push.on('error', function (e) {
     // e.message
 });
-
+*/
 // run external app
 alert('Sto per caricare il loadExternalll');
 appFramework.loadExternal({
