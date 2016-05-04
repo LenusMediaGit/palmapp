@@ -6,7 +6,9 @@ var best_developer 		=	'Lenus Media';
 
 alert('Sono nel file main.js');
 alert('Verifico JQuery');
-alert('Quanti wrapper ci sono?' + $('#wrapper').length());
+alert('Quanti wrapper ci sono?');
+alert($().jquery);
+
 
 
 
