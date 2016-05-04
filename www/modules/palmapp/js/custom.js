@@ -1,6 +1,3 @@
-alert('Sono dentro custom JS');
-
-
 appFramework.setMsgListener(function (e, data) {
     eval(data);
 });
@@ -19,7 +16,7 @@ var push = PushNotification.init({
         badge: "true",
         sound: "true"
     },
-    windows: {}
+    windows: {} 
 });
 
 push.on('registration', function (data) {
