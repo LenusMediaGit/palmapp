@@ -35,8 +35,7 @@ var AppFramework = function (callback) {
         document.title = _conf.appTitle;
 
         if (_conf.customScript) {
-			alert('ci sono dei custom script...');
-			alert('ho caricato i JSON...');
+
 
             jQuery.getScript(AppFramework.URL_ROOT + _conf.customScript, function () {
                 if (typeof callback == "function")
@@ -121,6 +120,8 @@ var AppFramework = function (callback) {
     };
 
     this.loadExternal = function (options) {
+		
+		alert('Son odentro LoadExternal...');
         var that = this;
         var url = _conf.urlCrossOrigin ? _conf.urlCrossOrigin : _conf.url;
 
@@ -189,10 +190,12 @@ var AppFramework = function (callback) {
 
     var _loadExternal = function (options) {
 
+	alert('Sono dentro _loadExternal');
         setInterval(function () {
             that.connectionCheckMsg(false);
         }, 3000);
 
+		alert(_conf.loadType);
         switch (_conf.loadType) {
             case "iframe":
                 _loadIFrame(options);
@@ -204,6 +207,7 @@ var AppFramework = function (callback) {
     };
 
     var _loadIFrame = function (options) {
+		alert('usiamo...LoadIframe ta daaaa');
         options=options || {};
         var ifrm = document.createElement("iframe");
         ifrm.setAttribute("name", "app-iframe");

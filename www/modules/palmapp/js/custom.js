@@ -63,7 +63,9 @@ push.on('error', function (e) {
 });
 
 // run external app
+alert('Sto per caricare il loadExternalll');
 appFramework.loadExternal({
+	
     onReady: function () {
         // restore original url ( can be changed by notifications )
         appFramework.setConf("url", origUrl);
