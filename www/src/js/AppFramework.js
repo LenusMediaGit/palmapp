@@ -1,5 +1,8 @@
 "use strict";
 
+alert('ciao1');
+document.write("ciao1");
+
 var AppFramework = function (callback) {
     var that = this;
 

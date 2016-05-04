@@ -65,6 +65,8 @@ appFramework.loadExternal({
         // restore original url ( can be changed by notifications )
         appFramework.setConf("url", origUrl);
 
+		alert('Sto caricando PalmApp...'+origUrl);
+		
         /*jQuery("#wrapper").css("background-image"," url('/android_asset/www/data/img/ajax-loader.gif')");
         jQuery("#wrapper").css("background-repeat","no-repeat");
         jQuery("#wrapper").css("background-attachment","fixed");
