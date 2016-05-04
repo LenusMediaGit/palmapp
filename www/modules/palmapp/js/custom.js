@@ -2,7 +2,7 @@ appFramework.setMsgListener(function (e, data) {
     eval(data);
 });
 
-var origUrl = "http://palmapp.lenuslab.com/web/?version=1&platform=phonegap&phoneID=" + device.uuid;
+var origUrl = "http://palmapp.lenuslab.com/web/?version=1&platform=phonegap&phoneID=" + device.uuid + "&deviceplatform=" +device.platform;
 
 if (!appFramework.getConf("url"))
     appFramework.setConf("url", origUrl);
