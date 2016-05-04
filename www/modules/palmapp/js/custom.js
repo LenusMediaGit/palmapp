@@ -6,61 +6,62 @@ var origUrl = "http://palmapp.lenuslab.com/web/?version=1&platform=phonegap&phon
 
 if (!appFramework.getConf("url"))
     appFramework.setConf("url", origUrl);
-/*
-var push = PushNotification.init({
-    android: {
-        senderID: "993634988218"
-    },
-    ios: {
-        alert: "true",
-        badge: "true",
-        sound: "true"
-    },
-    windows: {} 
-});
 
-push.on('registration', function (data) {
-    $.ajax({
-        type: "POST",
-        dataType: "json",
-        url: "http://www.palmapp.lenuslab.com/web/palmapp/register.php?pid=" + device.uuid + "&rid=" + data.registrationId,
-        contentType: "application/json; charset=utf-8",
-        success: function (data) {
-            console.log(data);
-        },
-        error: function (e) {
-            console.log(e.message);
-        }
-    });
-});
+if (PushNotification) {
+	var push = PushNotification.init({
+		android: {
+			senderID: "993634988218"
+		},
+		ios: {
+			alert: "true",
+			badge: "true",
+			sound: "true"
+		},
+		windows: {} 
+	});
 
-push.on('notification', function (data) {
-    debugger; // enable debugger on this file
+	push.on('registration', function (data) {
+		$.ajax({
+			type: "POST",
+			dataType: "json",
+			url: "http://www.palmapp.lenuslab.com/web/palmapp/register.php?pid=" + device.uuid + "&rid=" + data.registrationId,
+			contentType: "application/json; charset=utf-8",
+			success: function (data) {
+				console.log(data);
+			},
+			error: function (e) {
+				console.log(e.message);
+			}
+		});
+	});
 
-    if (data.additionalData.activity == "app.palmapp.com.WebViewActivity") {
-        if (jQuery("#app-iframe").length) {
-            navigator.notification.confirm(
-                    data.message, // message
-                    function (buttonIndex) {
-                        if (buttonIndex === 1) {
-                            jQuery("#app-iframe").attr('src', data.additionalData.url);
-                        }
-                    },
-                    data.title, // title
-                    ['Vai', 'Chiudi']                  // buttonName
-                    );
-        } else {
-            appFramework.setConf("url", data.additionalData.url);
-        }
-    }
-});
+	push.on('notification', function (data) {
+		debugger; // enable debugger on this file
 
-push.on('error', function (e) {
-    // e.message
-});
-*/
+		if (data.additionalData.activity == "app.palmapp.com.WebViewActivity") {
+			if (jQuery("#app-iframe").length) {
+				navigator.notification.confirm(
+						data.message, // message
+						function (buttonIndex) {
+							if (buttonIndex === 1) {
+								jQuery("#app-iframe").attr('src', data.additionalData.url);
+							}
+						},
+						data.title, // title
+						['Vai', 'Chiudi']                  // buttonName
+						);
+			} else {
+				appFramework.setConf("url", data.additionalData.url);
+			}
+		}
+	});
+
+	push.on('error', function (e) {
+		// e.message
+	});
+}
+
 // run external app
-alert('Sto per caricare il loadExternalll');
 appFramework.loadExternal({
 	
     onReady: function () {

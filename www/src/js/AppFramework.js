@@ -4,9 +4,6 @@
 
 var AppFramework = function (callback) {
     var that = this;
-	
-	alert('sono dentro app Framework.js' + jQuery().jquery);
-
 
     var _confDef = {};
     var _conf = {};
@@ -16,7 +13,6 @@ var AppFramework = function (callback) {
     // [constructor]
     // [TODO] avoid callback nesting using hwcore framework
     jQuery.getJSON(AppFramework.URL_CONF + "conf.def.json", function (resDef) {
-		alert('ho caricato i JSON...');
         _confDef = resDef;
         jQuery.getJSON(AppFramework.URL_CONF + "conf.json", function (res) {
             _conf = jQuery.extend(true, _confDef, res);
@@ -120,8 +116,6 @@ var AppFramework = function (callback) {
     };
 
     this.loadExternal = function (options) {
-		
-		alert('Son odentro LoadExternal...');
         var that = this;
         var url = _conf.urlCrossOrigin ? _conf.urlCrossOrigin : _conf.url;
 
@@ -189,13 +183,10 @@ var AppFramework = function (callback) {
 
 
     var _loadExternal = function (options) {
-
-	alert('Sono dentro _loadExternal');
         setInterval(function () {
             that.connectionCheckMsg(false);
         }, 3000);
 
-		alert(_conf.loadType);
         switch (_conf.loadType) {
             case "iframe":
                 _loadIFrame(options);
@@ -207,7 +198,6 @@ var AppFramework = function (callback) {
     };
 
     var _loadIFrame = function (options) {
-		alert('usiamo...LoadIframe ta daaaa');
         options=options || {};
         var ifrm = document.createElement("iframe");
         ifrm.setAttribute("name", "app-iframe");
