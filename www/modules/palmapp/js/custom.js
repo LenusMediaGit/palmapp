@@ -6,8 +6,18 @@ var origUrl = "http://palmapp.lenuslab.com/web/?version=1&platform=phonegap&phon
 
 if (!appFramework.getConf("url"))
     appFramework.setConf("url", origUrl);
+    
+   
+// Depending on the device, a few examples are:
+//   - "Android"
+//   - "BlackBerry 10"
+//   - "iOS"
+//   - "WinCE"
+//   - "Tizen"
+var devicePlatform = device.platform;
 
-if (PushNotification) {
+
+if (devicePlatform === "Android" && PushNotification) {
 	var push = PushNotification.init({
 		android: {
 			senderID: "993634988218"
