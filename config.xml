@@ -7,7 +7,11 @@
     <author email="info@lenus.it" href="http://www.lenus.it">
         Lenus media
     </author>
+	<gap:platform name="winphone" />
+    <gap:platform name="android" />
+    <gap:platform name="ios" />
     <icon src="logo.png"/>
+    <icon gap:platform="winphone" src="logo.png" />
     <icon gap:platform="ios" height="120" src="res/icon/ios/icon-120.png" width="120"/>
     <icon gap:platform="ios" height="152" src="res/icon/ios/icon-152.png" width="152"/>
     <icon gap:platform="ios" height="76" src="res/icon/ios/icon-76.png" width="76"/>
@@ -64,4 +68,5 @@
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
     </platform>
+	<platform name="winphone" />
 </widget>
