@@ -17,6 +17,8 @@ if (!appFramework.getConf("url"))
 var devicePlatform = device.platform;
 
 debugger;
+console.log("Test:");
+console.log(PushNotification);
 if (PushNotification) {
 	var push = PushNotification.init({
 		android: {
