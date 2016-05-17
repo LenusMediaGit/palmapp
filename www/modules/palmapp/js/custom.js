@@ -16,9 +16,10 @@ if (!appFramework.getConf("url"))
 //   - "Tizen"
 var devicePlatform = device.platform;
 
-debugger;
+
 console.log("Test:");
 console.log(PushNotification);
+debugger;
 if (PushNotification) {
 	var push = PushNotification.init({
 		android: {
