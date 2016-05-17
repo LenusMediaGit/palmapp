@@ -58,11 +58,13 @@
     <allow-intent href="sms:*"/>
     <allow-intent href="mailto:*"/>
     <allow-intent href="geo:*"/>
+    
+    <gap:plugin name="phonegap-plugin-push" source="npm">
+        <param name="SENDER_ID" value="993634988218"/>
+    </plugin>
+    
     <platform name="android">
         <allow-intent href="market:*"/>
-		<plugin name="phonegap-plugin-push" source="npm">
-			<param name="SENDER_ID" value="993634988218"/>
-		</plugin>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*"/>
