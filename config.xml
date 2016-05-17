@@ -50,7 +50,7 @@
     <gap:plugin name="cordova-plugin-splashscreen" source="npm"/>
     <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
     
-    <plugin name="phonegap-plugin-push" source="npm">
+    <plugin name="phonegap-plugin-push" source="npm" spec="~1.6.0">
         <param name="SENDER_ID" value="993634988218"/>
     </plugin>
     
@@ -66,6 +66,7 @@
         <allow-intent href="market:*"/>
     </platform>
     <platform name="ios">
+        <gap:plugin name="cordova-plugin-gcm-ios" source="npm"/>
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
     </platform>
