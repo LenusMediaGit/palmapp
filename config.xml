@@ -48,12 +48,12 @@
     <gap:plugin name="cordova-plugin-media" source="npm"/>
     <gap:plugin name="cordova-plugin-network-information" source="npm"/>
     <gap:plugin name="cordova-plugin-splashscreen" source="npm"/>
-    <plugin name="phonegap-plugin-push" source="npm" spec="~1.6.0">
+    <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.6.0">
         <param name="SENDER_ID" value="993634988218"/>
-    </plugin>
+    </gap:plugin>
     
     
-    <gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm" />
+    <gap:plugin name="cordova-plugin-legacy-whitelist" version="1.1.0" source="npm" />
     
 
     <access origin="*"/>
@@ -68,7 +68,6 @@
         <allow-intent href="market:*"/>
     </platform>
     <platform name="ios">
-        <gap:plugin name="cordova-plugin-gcm-ios" source="npm"/>
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
     </platform>
