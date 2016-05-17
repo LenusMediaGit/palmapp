@@ -16,8 +16,8 @@ if (!appFramework.getConf("url"))
 //   - "Tizen"
 var devicePlatform = device.platform;
 
-
-console.log("Test:");
+alert("test1");
+console.log("Test1:");
 console.log(PushNotification);
 debugger;
 if (PushNotification) {
