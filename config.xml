@@ -61,7 +61,7 @@
     <allow-intent href="mailto:*"/>
     <allow-intent href="geo:*"/>
     <platform name="android">
-        <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.5.0">
+        <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.6.0">
             <param name="SENDER_ID" value="993634988218"/>
         </gap:plugin>
     
@@ -70,36 +70,10 @@
     <platform name="ios">
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
-        <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.5.0">
+        <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.6.0">
             <param name="SENDER_ID" value="619337680774"/>
             <param name="GOOGLE_APP_ID" value="d8d2807717bb8fb8"/>
         </gap:plugin>
-        
-        <plist version="1.0">
-        <dict>
-            <key>GCM_SENDER_ID</key>
-            <string>619337680774</string>
-            <key>PLIST_VERSION</key>
-            <string>1</string>
-            <key>BUNDLE_ID</key>
-            <string>app.palmapp.com</string>
-            <key>PROJECT_ID</key>
-            <string>palmapp-f031d</string>
-            <key>IS_ADS_ENABLED</key>
-            <false/>
-            <key>IS_ANALYTICS_ENABLED</key>
-            <false/>
-            <key>IS_APPINVITE_ENABLED</key>
-            <false/>
-            <key>IS_GCM_ENABLED</key>
-            <true/>
-            <key>IS_SIGNIN_ENABLED</key>
-            <false/>
-            <key>GOOGLE_APP_ID</key>
-            <string>1:619337680774:ios:d8d2807717bb8fb8</string>
-        </dict>
-        </plist>
-        
     </platform>
 	<platform name="winphone" />
 </widget>
