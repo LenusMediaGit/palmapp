@@ -30,7 +30,7 @@ if (PushNotification) {
 			alert: "true",
 			badge: "true",
 			sound: "true",
-            senderID: gcmSenderID,
+            senderID: "619337680774",
             gcmSandbox:"true"
 		},
 		windows: {}
