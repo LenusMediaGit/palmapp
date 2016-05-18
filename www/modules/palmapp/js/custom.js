@@ -26,8 +26,7 @@ if (PushNotification) {
 		ios: {
 			alert: "true",
 			badge: "true",
-			sound: "true",
-            senderID: "619337680774"
+			sound: "true"
 		},
 		windows: {}
 	});

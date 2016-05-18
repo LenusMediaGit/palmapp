@@ -71,8 +71,7 @@
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
         <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.6.0">
-            <param name="SENDER_ID" value="619337680774"/>
-            <param name="GOOGLE_APP_ID" value="d8d2807717bb8fb8"/>
+            <!--<param name="SENDER_ID" value="619337680774"/> -->
         </gap:plugin>
     </platform>
 	<platform name="winphone" />
