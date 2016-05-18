@@ -29,9 +29,9 @@ if (PushNotification) {
 		ios: {
 			alert: "true",
 			badge: "true",
-			sound: "true"
-            /*senderID: gcmSenderID,
-            gcmSandbox:"true"*/
+			sound: "true",
+            senderID: "619337680774",
+            gcmSandbox:"true"
 		},
 		windows: {}
 	});
