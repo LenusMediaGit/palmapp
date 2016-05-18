@@ -16,15 +16,10 @@ if (!appFramework.getConf("url"))
 //   - "Tizen"
 var devicePlatform = device.platform;
 
-alert(devicePlatform);
-alert(PushNotification);
-
-gcmSenderID = "993634988218";
-
 if (PushNotification) {
 	var push = PushNotification.init({
 		android: {
-			senderID: gcmSenderID
+			senderID: "993634988218"
 		},
 		ios: {
 			alert: "true",
