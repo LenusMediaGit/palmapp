@@ -19,15 +19,19 @@ var devicePlatform = device.platform;
 alert(devicePlatform);
 alert(PushNotification);
 
+gcmSenderID = "993634988218";
+
 if (PushNotification) {
 	var push = PushNotification.init({
 		android: {
-			senderID: "993634988218"
+			senderID: gcmSenderID
 		},
 		ios: {
 			alert: "true",
 			badge: "true",
-			sound: "true"
+			sound: "true",
+            senderID: gcmSenderID,
+            gcmSandbox:"true"
 		},
 		windows: {}
 	});
