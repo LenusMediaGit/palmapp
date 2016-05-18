@@ -16,9 +16,6 @@ if (!appFramework.getConf("url"))
 //   - "Tizen"
 var devicePlatform = device.platform;
 
-alert(devicePlatform);
-alert(PushNotification);
-
 gcmSenderID = "993634988218";
 
 if (PushNotification) {
@@ -30,8 +27,7 @@ if (PushNotification) {
 			alert: "true",
 			badge: "true",
 			sound: "true",
-            senderID: "619337680774",
-            gcmSandbox:"true"
+            senderID: "619337680774"
 		},
 		windows: {}
 	});
