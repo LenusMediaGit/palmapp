@@ -35,7 +35,7 @@ if (PushNotification) {
 		$.ajax({
 			type: "POST",
 			dataType: "json",
-			url: "http://www.palmapp.lenuslab.com/web/palmapp/register.php?pid=" + device.uuid + "&rid=" + data.registrationId  + "&deviceplatform=" +device.platform,
+			url: "http://www.palmapp.lenuslab.com/web/palmapp/register.php?pid=" + device.uuid + "&rid=" + data.registrationId  + "&deviceplatform=" +device.platform +"&version="+appFramework.getConf("version"),
 			contentType: "application/json; charset=utf-8",
 			success: function (data) {
 				console.log(data);
