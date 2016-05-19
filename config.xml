@@ -71,7 +71,9 @@
         <allow-intent href="market:*"/>
     </platform>
     <platform name="ios">
-        <splash src="www/data/img/Background2.png" />
+        <!--<splash src="www/data/img/Background2.png" />-->
+        <preference name="DisallowOverscroll" value="true" />
+        <preference name="webviewbounce" value="false" />
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
         <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.5.0">
