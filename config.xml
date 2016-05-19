@@ -48,6 +48,7 @@
     <gap:plugin name="cordova-plugin-media" source="npm"/>
     <gap:plugin name="cordova-plugin-network-information" source="npm"/>
     <gap:plugin name="cordova-plugin-splashscreen" source="npm"/>
+    <gap:plugin name="cordova-plugin-camera" source="npm"/>
     
     <gap:plugin name="cordova-plugin-legacy-whitelist" version="1.1.0" source="npm" />
     
@@ -68,6 +69,7 @@
         <allow-intent href="market:*"/>
     </platform>
     <platform name="ios">
+        <splash src="www/data/img/Background2.png" />
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
         <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.5.0">
