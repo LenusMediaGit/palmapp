@@ -32,13 +32,6 @@
     <preference name="detect-data-types" value="true"/>
     <preference name="exit-on-suspend" value="false"/>
     
-    <!-- Windows 10 (default): -->
-    <preference name="windows-appx-target" value="uap" />
-    <!-- Windows 8.1: -->
-    <preference name="windows-appx-target" value="8.1-win" />
-    <!-- Windows Phone 8.1: -->
-    <preference name="windows-appx-target" value="8.1-phone" />
-    
     <!--<preference name="show-splash-screen-spinner" value="true" />-->
     <preference name="SplashScreen" value="none"/>
     <preference name="auto-hide-splash-screen" value="true"/>
@@ -56,7 +49,7 @@
     <gap:plugin name="cordova-plugin-globalization" source="npm"/>
     <gap:plugin name="cordova-plugin-media" source="npm"/>
     <gap:plugin name="cordova-plugin-network-information" source="npm"/>
-    <gap:plugin name="cordova-plugin-splashscreen" source="npm"/>
+    <!--<gap:plugin name="cordova-plugin-splashscreen" source="npm"/>-->
     <gap:plugin name="cordova-plugin-camera" source="npm"/>
     
     <gap:plugin name="cordova-plugin-legacy-whitelist" version="1.1.0" source="npm" />
