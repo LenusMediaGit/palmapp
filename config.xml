@@ -20,6 +20,7 @@
     <icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57"/>
     <icon gap:platform="ios" height="114" src="res/icon/ios/icon_at_2x.png" width="114"/>
     <content src="src/main.html"/>
+    <preference name="phonegap-version" value="cli-6.1.0" />
     <preference name="permissions" value="none"/>
     <preference name="orientation" value="portrait"/>
     <preference name="target-device" value="universal"/>
@@ -30,6 +31,14 @@
     <preference name="ios-statusbarstyle" value="black-opaque"/>
     <preference name="detect-data-types" value="true"/>
     <preference name="exit-on-suspend" value="false"/>
+    
+    <!-- Windows 10 (default): -->
+    <preference name="windows-appx-target" value="uap" />
+    <!-- Windows 8.1: -->
+    <preference name="windows-appx-target" value="8.1-win" />
+    <!-- Windows Phone 8.1: -->
+    <preference name="windows-appx-target" value="8.1-phone" />
+    
     <!--<preference name="show-splash-screen-spinner" value="true" />-->
     <preference name="SplashScreen" value="none"/>
     <preference name="auto-hide-splash-screen" value="true"/>
