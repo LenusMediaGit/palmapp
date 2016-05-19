@@ -48,7 +48,8 @@ if (PushNotification) {
 
 	push.on('notification', function (data) {
 		debugger; // enable debugger on this file
-
+        alert(data.additionalData.activity);
+        alert(data);
 		if (data.additionalData.activity == "app.palmapp.com.WebViewActivity") {
 			if (jQuery("#app-iframe").length) {
 				navigator.notification.confirm(
