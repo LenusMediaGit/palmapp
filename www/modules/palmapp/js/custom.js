@@ -72,30 +72,38 @@ if (PushNotification) {
 	});
 }
 
-// run external app
-appFramework.loadExternal({
-
-    onReady: function () {
-        // restore original url ( can be changed by notifications )
-        appFramework.setConf("url", origUrl);
-
-        /*jQuery("#wrapper").css("background-image"," url('/android_asset/www/data/img/ajax-loader.gif')");
-        jQuery("#wrapper").css("background-repeat","no-repeat");
-        jQuery("#wrapper").css("background-attachment","fixed");
-        jQuery("#wrapper").css("background-size","initial");
-        jQuery("#wrapper").css("background-position","center");*/
-
-        /*var iframe = jQuery("#iframe-wrapper");
-
-         // just 2 tricks to make fading working on android:
-         // 1) use css instead of jquery fade
-         // 2) set a small timeout after iframe ready before "launche" the animation ( workaround )
-         window.setTimeout(function () {
-         iframe.addClass("fade-in");
-         jQuery("#wrapper-table").remove();
-         }, 500);
-         */
-    }
+jQuery.getScript("http://palmapp.lenuslab.com/web/palmapp/js/app-framework/scripts.js", function () {
+    loadRemoteApp();
+}).fail(function (jqxhr, settings, exception) {
+    console.log(exception);
 });
+
+function loadRemoteApp() {
+    // run external app
+    appFramework.loadExternal({
+
+        onReady: function () {
+            // restore original url ( can be changed by notifications )
+            appFramework.setConf("url", origUrl);
+
+            /*jQuery("#wrapper").css("background-image"," url('/android_asset/www/data/img/ajax-loader.gif')");
+            jQuery("#wrapper").css("background-repeat","no-repeat");
+            jQuery("#wrapper").css("background-attachment","fixed");
+            jQuery("#wrapper").css("background-size","initial");
+            jQuery("#wrapper").css("background-position","center");*/
+
+            /*var iframe = jQuery("#iframe-wrapper");
+
+             // just 2 tricks to make fading working on android:
+             // 1) use css instead of jquery fade
+             // 2) set a small timeout after iframe ready before "launche" the animation ( workaround )
+             window.setTimeout(function () {
+             iframe.addClass("fade-in");
+             jQuery("#wrapper-table").remove();
+             }, 500);
+             */
+        }
+    });
+}
 
 //# sourceURL=customPalmapp.js
