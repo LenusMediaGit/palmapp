@@ -48,22 +48,30 @@ if (PushNotification) {
 
 	push.on('notification', function (data) {
 		debugger; // enable debugger on this file
-        alert(data.additionalData.activity);
-        alert(data);
-		if (data.additionalData.activity == "app.palmapp.com.WebViewActivity") {
+
+		var activity="",url="";
+		if (devicePlatform.toLowerCase()==="ios") {
+			activity=gcm.notification.activity;
+			url=gcm.notification.activity;
+		} else {
+			activity=data.additionalData.activity;
+			url=data.additionalData.activity;
+		}
+		
+		if (activity == "app.palmapp.com.WebViewActivity") {
 			if (jQuery("#app-iframe").length) {
 				navigator.notification.confirm(
 						data.message, // message
 						function (buttonIndex) {
 							if (buttonIndex === 1) {
-								jQuery("#app-iframe").attr('src', data.additionalData.url);
+								jQuery("#app-iframe").attr('src', url);
 							}
 						},
 						data.title, // title
 						['Vai', 'Chiudi']                  // buttonName
 						);
 			} else {
-				appFramework.setConf("url", data.additionalData.url);
+				appFramework.setConf("url", url);
 			}
 		}
 	});
