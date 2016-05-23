@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="app.palmapp.com" version="1.17.0" versionCode="17">
+	<gap:config-file platform="android" parent="/manifest">
+		 <application android:debuggable="true" />
+	</gap:config-file>
     <name>PalmApp</name>
     <description>
         Palmapp
