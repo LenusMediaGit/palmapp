@@ -51,8 +51,8 @@ if (PushNotification) {
 
 		var activity="",url="";
 		if (devicePlatform.toLowerCase()==="ios") {
-			activity=gcm.notification.activity;
-			url=gcm.notification.activity;
+			activity=data.gcm.notification.activity;
+			url=data.gcm.notification.activity;
 		} else {
 			activity=data.additionalData.activity;
 			url=data.additionalData.activity;
