@@ -4,7 +4,7 @@
     "url": "",
     "urlCrossOrigin": "http://palmapp.lenuslab.com/web/test-connection.php",
     "skipAjaxCheck": true,
-    "skipConnCheck" : false,
+    "skipConnCheck" : true,
     "customScript": "modules/palmapp/js/custom.js",
     "loadType": "iframe",
     "iframeTarget" : "#wrapper",
