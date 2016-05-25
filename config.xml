@@ -58,7 +58,7 @@
         <allow-intent href="http://*/*" />
         <allow-intent href="https://*/*" />
         <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.5.0">
-            <param name="SENDER_ID" value="993634988218" />
+            <param name="SENDER_ID" value="240674659233" />
         </gap:plugin>
         <allow-intent href="market:*" />
     </platform>
