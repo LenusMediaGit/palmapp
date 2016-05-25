@@ -8,5 +8,5 @@
     "customScript": "modules/palmapp/js/custom.js",
     "loadType": "iframe",
     "iframeTarget" : "#wrapper",
-    "evalPostMessage": false
+    "evalPostMessage": true
 }
