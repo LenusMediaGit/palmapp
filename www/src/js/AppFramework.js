@@ -205,14 +205,14 @@ var AppFramework = function (callback) {
         ifrm.setAttribute("frameBorder", 0);
         ifrm.setAttribute("id", "app-iframe");
 
-        var childWindow = (ifrm.contentWindow || ifrm.contentDocument);
+        that.childFrame = ifrm;
 
         $(ifrm).load(function () {
             options.onLoad && options.onLoad(); // called when iframe is fully loaded
         });
 
 
-        $(childWindow).ready(function () {
+        $(that.childWindow).ready(function () {
             options.onReady && options.onReady();
         });
 
@@ -223,6 +223,8 @@ var AppFramework = function (callback) {
             var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
             var eventer = window[eventMethod];
             var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+            
+            that.childWindow = (that.childFrame.contentWindow || that.childFrame.contentDocument);
 
             // Listen to message from child window
             eventer(messageEvent, function (e) {
@@ -234,7 +236,7 @@ var AppFramework = function (callback) {
                 else {
                     if (_conf.evalPostMessage) {
                         var result = eval(data);
-                        childWindow.postMessage(result, _conf.url);
+                        that.childWindow.postMessage(result, _conf.url);
                     } else {
                         console.log("Received from postMessage: " + data);
                     }

@@ -12,13 +12,13 @@
     <gap:platform name="ios" />
     <icon src="logo.png" />
     <icon platform="winphone" src="logo.png" />
-    <icon platform="ios" height="120" src="res/icon/ios/icon-120.png" width="120" />
-    <icon platform="ios" height="152" src="res/icon/ios/icon-152.png" width="152" />
-    <icon platform="ios" height="76" src="res/icon/ios/icon-76.png" width="76" />
-    <icon platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
-    <icon platform="ios" height="60" src="res/icon/ios/icon-60.png" width="60" />
-    <icon platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
-    <icon platform="ios" height="114" src="res/icon/ios/icon_at_2x.png" width="114" />
+    <icon height="120" platform="ios" src="res/icon/ios/icon-120.png" width="120" />
+    <icon height="152" platform="ios" src="res/icon/ios/icon-152.png" width="152" />
+    <icon height="76" platform="ios" src="res/icon/ios/icon-76.png" width="76" />
+    <icon height="72" platform="ios" src="res/icon/ios/icon-72.png" width="72" />
+    <icon height="60" platform="ios" src="res/icon/ios/icon-60.png" width="60" />
+    <icon height="57" platform="ios" src="res/icon/ios/icon-57.png" width="57" />
+    <icon height="114" platform="ios" src="res/icon/ios/icon_at_2x.png" width="114" />
     <content src="src/main.html" />
     <preference name="phonegap-version" value="cli-6.1.0" />
     <preference name="permissions" value="none" />
@@ -47,11 +47,11 @@
     <gap:plugin name="cordova-plugin-media" source="npm" />
     <gap:plugin name="cordova-plugin-network-information" source="npm" />
     <gap:plugin name="cordova-plugin-camera" source="npm" />
+    <gap:plugin name="cordova-plugin-uniquedeviceid" source="npm" />
     <gap:plugin name="cordova-plugin-legacy-whitelist" source="npm" version="1.1.0" />
     <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.5.0">
         <param name="SENDER_ID" value="240674659233" />
     </gap:plugin>
-    
     <access origin="*" />
     <allow-navigation href="*" />
     <allow-intent href="tel:*" />
