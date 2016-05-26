@@ -7,9 +7,6 @@
     <author email="info@lenus.it" href="http://www.lenus.it">
         Lenus media
     </author>
-    <gap:platform name="winphone" />
-    <gap:platform name="android" />
-    <gap:platform name="ios" />
     <icon src="logo.png" />
     <splash src="splash.png" width="320" height="480" />
     <content src="src/main.html" />
