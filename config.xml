@@ -11,14 +11,7 @@
     <gap:platform name="android" />
     <gap:platform name="ios" />
     <icon src="logo.png" />
-    <icon platform="winphone" src="logo.png" />
-    <icon height="120" platform="ios" src="res/icon/ios/icon-120.png" width="120" />
-    <icon height="152" platform="ios" src="res/icon/ios/icon-152.png" width="152" />
-    <icon height="76" platform="ios" src="res/icon/ios/icon-76.png" width="76" />
-    <icon height="72" platform="ios" src="res/icon/ios/icon-72.png" width="72" />
-    <icon height="60" platform="ios" src="res/icon/ios/icon-60.png" width="60" />
-    <icon height="57" platform="ios" src="res/icon/ios/icon-57.png" width="57" />
-    <icon height="114" platform="ios" src="res/icon/ios/icon_at_2x.png" width="114" />
+    <splash src="splash.png" width="320" height="480" />
     <content src="src/main.html" />
     <preference name="phonegap-version" value="cli-6.1.0" />
     <preference name="permissions" value="none" />
@@ -62,12 +55,25 @@
         <allow-intent href="http://*/*" />
         <allow-intent href="https://*/*" />
         <allow-intent href="market:*" />
+        <splash src="data/img/Background.png" width="320" height="480" />
     </platform>
     <platform name="ios">
         <preference name="DisallowOverscroll" value="true" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <icon height="180" src="res/icon/ios/icon-180.png" width="180" />
+        <icon height="120" src="res/icon/ios/icon-120.png" width="120" />
+        <icon height="152" src="res/icon/ios/icon-152.png" width="152" />
+        <icon height="76"  src="res/icon/ios/icon-76.png" width="76" />
+        <icon height="72"  src="res/icon/ios/icon-72.png" width="72" />
+        <icon height="60"  src="res/icon/ios/icon-60.png" width="60" />
+        <icon height="57"  src="res/icon/ios/icon-57.png" width="57" />
+        <icon height="114" src="res/icon/ios/icon_at_2x.png" width="114" />
+        <splash src="data/img/Background.png" width="320" height="480" />
     </platform>
-    <platform name="winphone" />
+    <platform name="winphone">
+        <icon platform="winphone" src="logo.png" />
+        <splash src="data/img/Background.png" width="320" height="480" />
+    </platform>
     <engine name="android" spec="~4.1.1" />
 </widget>
