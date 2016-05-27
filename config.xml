@@ -84,5 +84,4 @@
         <icon src="res/icon/generic/icon.png" />
         <splash src="res/splash/generic/splash.png" width="320" height="480"  />
     </platform>
-    <engine name="android" spec="~4.1.1" />
 </widget>
