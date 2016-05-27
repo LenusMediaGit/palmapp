@@ -11,7 +11,7 @@
     <content src="src/main.html" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <feature name="StatusBar">
-        <param name="ios-package" value="CDVStatusBar" onload="true" />
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
     <preference name="SplashScreen" value="splash.png" />
     <preference name="SplashScreenDelay" value="0" />
@@ -59,7 +59,7 @@
         <allow-intent href="https://*/*" />
         <allow-intent href="market:*" />
         <icon src="res/icon/android/icon.png" />
-        <splash src="res/splash/android/splash.png" width="320" height="480"  />
+        <splash height="480" src="res/splash/android/splash.png" width="320" />
     </platform>
     <platform name="ios">
         <preference name="DisallowOverscroll" value="true" />
@@ -73,15 +73,15 @@
         <icon height="72" src="res/icon/ios/icon-72.png" width="72" />
         <icon height="60" src="res/icon/ios/icon-60.png" width="60" />
         <icon height="50" src="res/icon/ios/icon-50.png" width="50" />
-        <splash src="res/screen/ios/screen-iphone-potrait.png" width="320" height="480"/>
-        <splash src="res/screen/ios/screen-iphone-potrait-2x.png" width="640" height="960"/>
-        <splash src="res/screen/ios/screen-iphone-potrait-568h-2x.png" width="640" height="1136"/>
-        <splash src="res/screen/ios/screen-iphone-potrait-667h.png" width="750" height="1334"/>
-        <splash src="res/screen/ios/screen-iphone-potrait-736h.png" width="1242" height="2208"/>
-        <splash src="res/screen/ios/Default-Landscape-736h.png" width="2208" height="1242"/>
+        <splash height="480" src="res/screen/ios/screen-iphone-potrait.png" width="320" />
+        <splash height="960" src="res/screen/ios/screen-iphone-potrait-2x.png" width="640" />
+        <splash height="1136" src="res/screen/ios/screen-iphone-potrait-568h-2x.png" width="640" />
+        <splash height="1334" src="res/screen/ios/screen-iphone-potrait-667h.png" width="750" />
+        <splash height="2208" src="res/screen/ios/screen-iphone-potrait-736h.png" width="1242" />
+        <splash height="1242" src="res/screen/ios/Default-Landscape-736h.png" width="2208" />
     </platform>
     <platform name="winphone">
         <icon src="res/icon/generic/icon.png" />
-        <splash src="res/splash/generic/splash.png" width="320" height="480"  />
+        <splash height="480" src="res/splash/generic/splash.png" width="320" />
     </platform>
 </widget>
