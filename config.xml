@@ -11,6 +11,7 @@
     <content src="src/main.html" />
     <preference name="SplashScreen" value="splash.png" />
     <preference name="SplashScreenDelay" value="0" />
+    <preference name="ShowSplashScreen" value="false" />
     <preference name="phonegap-version" value="cli-6.1.0" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
