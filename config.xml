@@ -10,6 +10,9 @@
     <gap:icon src="icon.png" />
     <content src="src/main.html" />
     <preference name="StatusBarOverlaysWebView" value="false" />
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
     <preference name="SplashScreen" value="splash.png" />
     <preference name="SplashScreenDelay" value="0" />
     <preference name="ShowSplashScreen" value="false" />
