@@ -13,7 +13,6 @@ cordova plugin add cordova-plugin-media
 cordova plugin add cordova-plugin-network-information
 cordova plugin add cordova-plugin-splashscreen
 cordova plugin add cordova-plugin-whitelist
-cordova plugin addphonegap-plugin-push
 
 if [ -f ./phonegap-install-custom-plugins ]; then
     source ./phonegap-install-custom-plugins
