@@ -1,1 +1,2 @@
 cordova plugin add phonegap-plugin-push@~1.5.0 --variable SENDER_ID="240674659233"
+cordova plugin add cordova-plugin-statusbar
