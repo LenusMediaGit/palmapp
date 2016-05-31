@@ -10,20 +10,6 @@
     <author email="info@lenus.it" href="http://www.lenus.it">
         Lenus media
     </author>
-    <gap:icon src="icon.png" />
-    <content src="index.html" />
-    <preference name="StatusBarOverlaysWebView" value="false" />
-    <feature name="StatusBar">
-        <param name="ios-package" onload="true" value="CDVStatusBar" />
-    </feature>
-    <preference name="phonegap-version" value="cli-6.1.0" />
-    <preference name="orientation" value="portrait" />
-    <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="false" />
-    <preference name="stay-in-webview" value="true" />
-    <preference name="SplashScreen" value="splash.png" />
-    <preference name="SplashScreenDelay" value="0" />
-    <preference name="ShowSplashScreen" value="false" />
     <plugin name="cordova-plugin-console" source="npm" />
     <plugin name="cordova-plugin-vibration" source="npm" />
     <plugin name="cordova-plugin-device" source="npm" />
@@ -41,6 +27,18 @@
     <plugin name="phonegap-plugin-push" source="npm" spec="~1.5.0">
         <param name="SENDER_ID" value="240674659233" />
     </plugin>
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="phonegap-version" value="cli-6.1.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="stay-in-webview" value="true" />
+    <preference name="SplashScreen" value="splash.png" />
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="ShowSplashScreen" value="false" />
     <access origin="*" />
     <allow-navigation href="*" />
     <allow-intent href="tel:*" />
@@ -86,4 +84,6 @@
         <splash height="480" src="res/splash/generic/splash.png" width="320" />
     </platform>
     <icon src="icon.png" />
+    <gap:icon src="icon.png" />
+    <content src="index.html" />
 </widget>
