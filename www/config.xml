@@ -26,7 +26,7 @@
     <gap:plugin name="cordova-plugin-legacy-whitelist" source="npm" version="1.1.0" />
     <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.5.0">
         <param name="SENDER_ID" value="240674659233" />
-    </plugin>
+    </gap:plugin>
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
