@@ -248,7 +248,7 @@ var AppFramework = function (callback) {
 
 
 // Static properties
-AppFramework.URL_ROOT = "../";
+AppFramework.URL_ROOT = "./";
 AppFramework.URL_SRC = AppFramework.URL_ROOT + "src/";
 AppFramework.URL_MODULES = AppFramework.URL_ROOT + "modules/";
 AppFramework.URL_JS = AppFramework.URL_SRC + "js/";
