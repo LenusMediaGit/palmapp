@@ -1,0 +1,12 @@
+{
+    "appTitle": "PalmApp",
+    "version" : "1.18.0",
+    "url": "",
+    "urlCrossOrigin": "http://palmapp.lenuslab.com/web/test-connection.php",
+    "skipAjaxCheck": true,
+    "skipConnCheck" : true,
+    "customScript": "modules/palmapp/js/custom.js",
+    "loadType": "iframe",
+    "iframeTarget" : "#wrapper",
+    "evalPostMessage": false
+}

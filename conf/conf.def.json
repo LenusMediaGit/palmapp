@@ -1,0 +1,11 @@
+{
+    "appTitle": "App Framework",
+    "url": "",
+    "urlCrossOrigin": "",
+    "skipAjaxCheck": false,
+    "skipConnCheck" : false,
+    "customScript": "",
+    "loadType": "webview",
+    "iframeTarget": "",
+    "evalPostMessage": false
+}
