@@ -104,8 +104,6 @@
         <allow-intent href="http://*/*" />
         <allow-intent href="https://*/*" />
         <allow-intent href="market:*" />
-        <icon src="res/icon/android/icon.png" />
-        <gap:splash height="480" src="res/splash/android/splash.png" width="320" />
     </platform>
     <platform name="ios">
         <preference name="detect-data-types" value="true" />
@@ -116,16 +114,6 @@
         <preference name="DisallowOverscroll" value="true" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-        <icon src="res/icon/ios/icon.png" />
-        <icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
-        <icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
-        <icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
-        <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
-        <gap:splash height="480" src="res/screen/ios/screen-iphone-portrait.png" width="320" />
-        <gap:splash height="960" src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
-        <gap:splash height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
-        <gap:splash height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
-        <gap:splash height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     </platform>
     <platform name="winphone">
         <icon src="res/icon/generic/icon.png" />
