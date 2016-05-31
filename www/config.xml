@@ -15,7 +15,7 @@
     <gap:plugin name="cordova-plugin-contacts" source="npm"  />
     <gap:plugin name="cordova-plugin-file" source="npm"  />
     <gap:plugin name="cordova-plugin-file-transfer" source="npm"  />
-    <gap:plugin name="cordova-plugin-file-geolocation" />
+    <gap:plugin name="cordova-plugin-geolocation" />
     <!---->
     <gap:plugin name="cordova-plugin-console" source="npm" />
     <gap:plugin name="cordova-plugin-vibration" source="npm" />
