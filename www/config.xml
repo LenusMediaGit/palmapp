@@ -3,6 +3,9 @@
     <gap:config-file parent="CFBundleShortVersionString" platform="ios">
         <string>18</string>
     </gap:config-file>
+    <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
+        <false/>
+    </gap:config-file>
     <name>PalmApp</name>
     <description>
         Palmapp
