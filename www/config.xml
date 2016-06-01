@@ -10,31 +10,31 @@
     <author email="info@lenus.it" href="http://www.lenus.it">
         Lenus media
     </author>       
-    <gap:plugin name="cordova-plugin-battery-status"  source="npm" />
-    <gap:plugin name="cordova-plugin-camera"  source="npm" />
-    <gap:plugin name="cordova-plugin-media-capture"  source="npm" />
-    <gap:plugin name="cordova-plugin-console"  source="npm" />
-    <gap:plugin name="cordova-plugin-contacts"  source="npm" />
-    <gap:plugin name="cordova-plugin-device"  source="npm" />
-    <gap:plugin name="cordova-plugin-device-motion"  source="npm" />
-    <gap:plugin name="cordova-plugin-device-orientation"  source="npm" />
-    <gap:plugin name="cordova-plugin-dialogs"  source="npm" />
-    <gap:plugin name="cordova-plugin-file"  source="npm" />
-    <gap:plugin name="cordova-plugin-file-transfer"  source="npm" />
-    <gap:plugin name="cordova-plugin-geolocation"  source="npm" />
-    <gap:plugin name="cordova-plugin-globalization"  source="npm" />
-    <gap:plugin name="cordova-plugin-inappbrowser"  source="npm" />
-    <gap:plugin name="cordova-plugin-media"  source="npm" />
-    <gap:plugin name="cordova-plugin-network-information"  source="npm" />
-    <gap:plugin name="cordova-plugin-splashscreen"  source="npm" />
-    <gap:plugin name="cordova-plugin-vibration"  source="npm" />
+    <plugin name="cordova-plugin-battery-status"  source="npm" />
+    <plugin name="cordova-plugin-camera"  source="npm" />
+    <plugin name="cordova-plugin-media-capture"  source="npm" />
+    <plugin name="cordova-plugin-console"  source="npm" />
+    <plugin name="cordova-plugin-contacts"  source="npm" />
+    <plugin name="cordova-plugin-device"  source="npm" />
+    <plugin name="cordova-plugin-device-motion"  source="npm" />
+    <plugin name="cordova-plugin-device-orientation"  source="npm" />
+    <plugin name="cordova-plugin-dialogs"  source="npm" />
+    <plugin name="cordova-plugin-file"  source="npm" />
+    <plugin name="cordova-plugin-file-transfer"  source="npm" />
+    <plugin name="cordova-plugin-geolocation"  source="npm" />
+    <plugin name="cordova-plugin-globalization"  source="npm" />
+    <plugin name="cordova-plugin-inappbrowser"  source="npm" />
+    <plugin name="cordova-plugin-media"  source="npm" />
+    <plugin name="cordova-plugin-network-information"  source="npm" />
+    <plugin name="cordova-plugin-splashscreen"  source="npm" />
+    <plugin name="cordova-plugin-vibration"  source="npm" />
     <!---->
-    <gap:plugin name="cordova-plugin-camera" source="npm" />
-    <gap:plugin name="cordova-plugin-uniquedeviceid" source="npm" />
-    <gap:plugin name="cordova-plugin-statusbar" source="npm" />
-    <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.5.0">
+    <plugin name="cordova-plugin-camera" source="npm" />
+    <plugin name="cordova-plugin-uniquedeviceid" source="npm" />
+    <plugin name="cordova-plugin-statusbar" source="npm" />
+    <plugin name="phonegap-plugin-push" source="npm" spec="~1.5.0">
         <param name="SENDER_ID" value="240674659233" />
-    </gap:plugin>
+    </plugin>
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
