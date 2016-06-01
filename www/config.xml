@@ -87,11 +87,13 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <platform name="winphone">
+        <icon src="res/icon/generic/icon.png" />
+        <splash height="480" src="res/splash/generic/splash.png" width="320" />
     </platform>   
     
     <content src="index.html" />
     <gap:icon src="icon.png" />
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
-    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarOverlaysWebView"   value="true" />
 </widget>
